@@ -1,6 +1,10 @@
 # sdrpp_new_rtlsdr_source
 ### a new rtl-sdr source for sdr++ with librtlsdr/librtlsdr and it implements the r820/t2 tuner hack and manual controls.
 
+![photo1](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/assets/69393574/920c01d4-c3fa-40b9-a60a-2151a50fd69e)
+![photo2](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/assets/69393574/5373c07d-df57-48a4-b941-39b844962c43)
+
+
 # Caution !
 ### Only works on rtl-sdr with r820 / r820t2 tuners. Using it with a wrong tuner may destroy your device because of the register hack
 
@@ -11,7 +15,7 @@
 
 ## 1) Add the "new_rtl_sdr_source" folder to "SDRPlusPlus/source_modules"
 
-## 2) On SDRPlusPlus/CMakeLists.txt:
+## 2) On SDRPlusPlus/CMakeLists.txt add:
 ```
 32 option(OPT_BUILD_NEW_RTL_SDR_SOURCE "Build RTL-SDR Source Module (Dependencies: librtlsdr)" ON)
 .
