@@ -25,7 +25,7 @@
 196 endif (OPT_BUILD_NEW_RTL_SDR_SOURCE)
 ```
 
-## 3) Windows build looks for "C:\Program Files\PothosSDR\include" folder to find the librtlsdr header files. changed those header files with this repos header
+## 3) Windows build looks for "C:\Program Files\PothosSDR\include" folder to find the librtlsdr header files. change those header files with this repos header
 ```
 https://github.com/librtlsdr/librtlsdr
 and the files you are gonna change are;
