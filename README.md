@@ -4,7 +4,10 @@
 # Caution !
 ### Only works on rtl-sdr with r820 / r820t2 tuners. Using it with a wrong tuner may destroy your device because of the register hack
 
-#Building for Windows:
+# Caution NUMBER TWO
+### This project is under heavy development (thats a lie but i will finish it less than a week). the build instructions will change and i will provide you with the prebuilt .dll /.so files so you can drag&drop them to your sdr++ program.
+
+# Building for Windows:
 
 ## 1) Add the "new_rtl_sdr_source" folder to "SDRPlusPlus/source_modules"
 
