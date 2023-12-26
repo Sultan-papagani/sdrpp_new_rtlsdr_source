@@ -40,7 +40,14 @@ https://github.com/librtlsdr/librtlsdr
 ```
 ## 5) i used mingw64 to compile because msvc wont work idk why aaand rename the built file: "librtlsdr.dll" to "rtlsdr.dll" and put it on "SDRPlusPlus\build\Release" folder or wherever the sdrpp.exe is.
 
-## 6) enjoy. 
+## 6 also after building, on the "SDRPlusPlus\root_dev\config.json" files add this line to modules:[];
+```
+"./build/source_modules/new_rtl_sdr_source/Release/new_rtl_sdr_source.dll"
+
+also if you accidentally put "," on the last string, sdr++ resets all the config.json so be careful. i broke my mouse for this :/
+```
+
+## 7) enjoy. 
 
 #### also if you open the project on vscode probably all the lines will be red because vscode cant find the rtlsdr files but it compiles fine.
 
