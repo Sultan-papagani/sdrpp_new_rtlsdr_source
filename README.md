@@ -17,7 +17,7 @@ New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2 tu
 
 ## Windows
 
-Download prebuilt .dll files from [Release](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/releases/tag/Release)
+Download prebuilt .dll files from [Release](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/releases/tag/Final-Release)
 * Replace the rtlsdr.dll with the new one
 * Put "new_rtl_sdr_source.dll" into "modules" folder
 * Launch sdrpp.exe and add the new module from "Module Manager"
