@@ -10,6 +10,9 @@ New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2 tu
 * 3 Stage gain control
 * 4 Filter controls
 
+## Needed Hardware
+* rtl-sdr with a r820/r820t2 tuner
+
 # Installing
 
 ## Windows
