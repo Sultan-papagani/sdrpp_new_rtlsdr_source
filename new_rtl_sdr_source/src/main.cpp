@@ -16,7 +16,6 @@
 
 // !  viewer notice
 // -> Actual rtl_sdr_source Author is Ryzerth
-// -> this code %99.9 belongs to Ryzerth
 // -> i just added the exposed controls
 SDRPP_MOD_INFO{
     /* Name:            */ "new_rtl_sdr_source",
@@ -77,7 +76,7 @@ public:
         handler.stream = &stream;
 
         strcpy(dbTxt, "--");
-        // ! >> development here <<<
+
         strcpy(harmonic_level_Txt, "Off");
         strcpy(lnaGainTxt, "0 dB");
         strcpy(mixerGainTxt, "0 dB");
@@ -450,7 +449,7 @@ private:
             }
         }
 
-        // ! >>> development STARTS here <<<<
+        
 
         if (_this->correctTuner)
         {
@@ -515,7 +514,7 @@ private:
             SmGui::EndGroup();
         }
 
-        // ! >>> development ENDS here <<<< and also starts i guess ?
+        
 
         if (_this->control_mode && _this->correctTuner)
         {
@@ -595,7 +594,7 @@ private:
         }
         else
         {
-            // regular
+            // auto controls
             if (_this->tunerAgc || _this->gainList.size() == 0) { SmGui::BeginDisabled(); }
 
             SmGui::LeftLabel("Gain");
@@ -707,7 +706,7 @@ private:
             }
         }
 
-        // ! >> development <<
+        
 
         if (_this->correctTuner)
         {
@@ -718,7 +717,7 @@ private:
             }
         }
 
-        // ! >> dev ends <<
+       
     }
 
     void worker() {
@@ -730,8 +729,8 @@ private:
         RTLSDRSourceModule* _this = (RTLSDRSourceModule*)ctx;
         int sampCount = len / 2;
         for (int i = 0; i < sampCount; i++) {
-            _this->stream.writeBuf[i].re = (float)(buf[i * 2] - 127) / 128.0f;
-            _this->stream.writeBuf[i].im = (float)(buf[(i * 2) + 1] - 127) / 128.0f;
+            _this->stream.writeBuf[i].re = ((float)buf[i * 2] - 127.4) / 128.0f;
+            _this->stream.writeBuf[i].im = ((float)buf[(i * 2) + 1] - 127.4) / 128.0f;
         }
         if (!_this->stream.swap(sampCount)) { return; }
     }
@@ -773,7 +772,6 @@ private:
 
     int directSamplingMode = 0;
 
-    // ! >>>development here <<<
     bool correctTuner = false;
     int control_mode = 0; //0=automatic 1=manual
     bool dither = false;
