@@ -321,12 +321,12 @@ private:
         rtlsdr_set_offset_tuning(_this->openDev, _this->offsetTuning);
 
         // check for tuner!! 
-        // im guessing that these exposed tuner registers & librtlsdr functions only works on r820/r820t2
-        // im not sure about the rtl-sdr v4 units (r828d) so i didnt allow those units
+        // rtl-sdr v4 is should be working.
+        // i heard that its the same chip just has 3 seperate inputs
         _this->correctTuner = false;
 
         rtlsdr_tuner tuner_type = rtlsdr_get_tuner_type(_this->openDev);
-        if (tuner_type == RTLSDR_TUNER_R820T)
+        if (tuner_type == RTLSDR_TUNER_R820T || tuner_type == RTLSDR_TUNER_R828D)
         {
             _this->correctTuner = true;
         }
