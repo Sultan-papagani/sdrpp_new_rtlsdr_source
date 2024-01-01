@@ -1,5 +1,5 @@
 # sdrpp_new_rtlsdr_source
-New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2 tuners.
+New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2/r828d tuners.
 
 ![photo1](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/assets/69393574/920c01d4-c3fa-40b9-a60a-2151a50fd69e)
 ![photo2](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/assets/69393574/5373c07d-df57-48a4-b941-39b844962c43)
@@ -11,13 +11,13 @@ New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2 tu
 * 4 Filter controls
 
 ## Needed Hardware
-* rtl-sdr with a r820/r820t2 tuner
+* rtl-sdr with a r820/r820t2/r828d tuner (yes rtl-sdr v4 also supported)
 
 # Installing
 
 ## Windows
 
-Download prebuilt .dll files from [Release](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/releases/tag/Final-Release)
+Download prebuilt .dll files from Release
 * Replace the rtlsdr.dll with the new one
 * Put "new_rtl_sdr_source.dll" into "modules" folder
 * Launch sdrpp.exe and add the new module from "Module Manager"
