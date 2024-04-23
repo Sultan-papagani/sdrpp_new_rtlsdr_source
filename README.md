@@ -1,4 +1,7 @@
 # sdrpp_new_rtlsdr_source
+
+## Hey heeey! there is even newer&better rtl-sdr source, check it out [here](https://github.com/Sultan-papagani/sdrpp_rtlsdr_source)
+
 New rtl-sdr source for sdr++ which implements manual controls for r820/r820t2/r828d tuners.
 
 ![photo1](https://github.com/Sultan-papagani/sdrpp_new_rtlsdr_source/assets/69393574/920c01d4-c3fa-40b9-a60a-2151a50fd69e)
